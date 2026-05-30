@@ -461,6 +461,7 @@ main {
 }
 
 .profile-heading h3 {
+    min-width: 0;
     font-size: 1.28rem;
     letter-spacing: 0.04em;
 }
@@ -469,7 +470,13 @@ main {
     display: inline-flex;
     align-items: baseline;
     gap: 0.38em;
+    min-width: 0;
+    white-space: nowrap;
     transition: color 0.2s ease;
+}
+
+.member-name {
+    white-space: nowrap;
 }
 
 .member-name-link:hover,
@@ -1010,6 +1017,18 @@ a.work-entry-banner:focus-visible img {
 
     .profile-heading {
         align-items: flex-start;
+        gap: 12px;
+    }
+
+    .member-name-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.08em;
+    }
+
+    .member-reading {
+        font-size: 0.66rem;
+        letter-spacing: 0.14em;
     }
 
     .video-grid {
